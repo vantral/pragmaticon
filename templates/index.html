@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Discourse formulae</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap-4.5.2.min.css" type="text/css">
+
+    <script type="text/javascript" src="/static/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.bundle-4.5.2.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+
+
+</head>
+
+<body>
+    <div style="position: absolute;margin-left: calc(50% - (400px – 2));margin-top: 0.8em;z-index:1;">
+        <a href="/">
+            <img src="/static/img/logo.png" height="110px">
+        </a>
+    </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark bg-dark static-top yellow container-fluid" style="height: 65px;">
+    <div class="container-fluid" style="max-width: 1150px;">
+        <div style="position: relative;top: 50%;left: 50%;transform: translate(-50%, 0);">
+            <a class="navbar-brand d-none d-sm-block" href="/">
+                MULTILINGUAL PRAGMATICON
+            </a>
+        </div>
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </div>
+        
+      </button>
+    </div>
+  </nav>
+  <div class="container-fluid" style="max-width: 1150px;height: 0px;">
+    <div class="collapse navbar-collapse" id="navbarResponsive" style="margin-top: -1px;">
+        <ul class="navbar-nav yellow" style="z-index: 1;">
+
+            <li class="nav-item">
+              <a class="navlink" href='/about'> - about us</a>
+            </li>
+      
+            <li class="nav-item">
+                <a class="navlink" href='/instruction'> - how to use</a>
+            </li>
+      
+            <li class="nav-item">
+                <a class="navlink" href='/publications'> - publications</a>
+            </li>
+          </ul>
+    </div>
+</div>
+  <nav class="grey" style="height: 300px;">
+    
+    <div style="text-align: center; padding-top: 60px;padding-bottom: 20px;">
+        <h1>Typological database<br>
+            of discourse formulae</h1>
+    </div>
+    
+    <div style="text-align: center;background-color: white;box-shadow: grey 4px 3px 15px;width: 150px;margin:auto">
+        <div>
+            <a href="#search" style="text-decoration: none;">
+            <h4>search
+                <img src="/static/img/search_tool.png" height="30px">
+            </h4>
+            </a>
+        </div>
+    </div>
+
+    <a id="myBtn" href="#" style="text-decoration-color: #7b7a7a;">
+        <div style="text-align: center;margin-top: 30px;">
+            <h5 style="color: #7b7a7a;">how to cite
+                <img src="/static/img/hand.png" height="20px">
+            </h5>
+        </div>
+    </a>
+  </nav>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="position: absolute;top: 40%;left: 50%;z-index:2;transform: translate(-50%, 0);width: 50%">
+    <p>Buzanov A., Bychkova P., Molchanova A., Postnikova A., Ryzhova D., Stanković M., Multilingual Pragmaticon, 2021, available at <a href="http://bit.ly/multipragmaticon">http://bit.ly/multipragmaticon</a><span class="close"></span></p>
+  </div>
+
+</div>
+
+
+<div class="mini-card red-orange" style="margin-top: 70px;">
+    <div class="container">
+        <h4><b>What Are Discourse Formulae?</b></h4> 
+        We define discourse formulae as multiword idiomatic reactions to another utterance.
+        These units are evidently pragmatic,
+        because they only occur in a dialogue and express the speaker’s attitude to the interlocutor’s words.
+        DFs form a well-defined, though not a closed class of linguistic items.
+        Instead, this class appears to be subject to constant renovation,
+        and thus provides a very rich basis for the analysis of the pragmaticalization processes.
+    </div>
+</div>
+
+<div class="mini-card blue-blue" style="margin-top: 30px;">
+    <div class="container">
+        <h4><b>Database</b></h4> 
+        Our database includes DFs from Russian,
+        Serbian and Slovenian (the list of languages
+        is constantly expanding). The database offers
+        detailed information on each formula, including
+        but not limited to glosses, general syntactic structure
+        and variation, main pragmatic function, additional
+        semantics and the type of the context. More information
+        on the database structure and possible queries can be
+        found here.
+    </div>
+</div>
+
+<div class="mini-card yellow-orange" style="margin-top: 30px;">
+    <div class="container">
+        <h4><b>About Us</b></h4> 
+        The project is created by the following
+        faculty and students of School of Linguistics
+        (HSE University, Moscow):
+        <table style="margin-top: 5px;">
+              <tr>
+                <td class="tg-0pky">— Polina Bychkova<br></td>
+                <td></td>
+                <td class="tg-0pky">— Anton Buzanov</td>
+              </tr>
+            <tbody>
+              <tr>
+                <td class="tg-0pky">— Daria Ryzhova</td>
+                <td></td>
+                <td class="tg-0pky">— Arina Molchanova</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">— Miljka Stanković</td>
+                <td></td>
+                <td class="tg-0pky">— Anna Postnikova</td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+</div>
+
+  <!-- Page Content -->
+<div class="search grey" style="margin-top: 70px; font-family: Arial, Helvetica, sans-serif;">
+    <div class="container-fluid yellow" style="color: white;font-size: x-large;text-shadow: grey 4px 3px 15px;">
+        <a name="search">SEARCH</a>
+    </div>
+<form action="/result" target="_blank" method="GET" autocomplete="off">
+
+    <div class="container" style="margin-top: 20px;width: 95%;">
+      <div class="form-row">
+          <div class="form-group center" style="width: 100%;">
+              <label>Word</label>
+              <input class="form-control" name="word" list="formulae" id="main input" placeholder="Use the Latin script">
+              <datalist  id="formulae">
+                  {% for formula in formulae %}
+                  <option value="{{ formula }}">{{ formula }}</option>
+                  {% endfor %}
+              </datalist>
+          </div>
+          <div class="container row" id="virtual" style="width: fit-content;margin: auto;margin-top: 8px;">
+            <input type="button" class="virtual-button" value="č" onclick="input(this, 'main input');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="ć" onclick="input(this, 'main input');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="đ" onclick="input(this, 'main input');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="š" onclick="input(this, 'main input');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="ž" onclick="input(this, 'main input');">
+          </div>
+      </div>
+
+      <div class="form-row" style="height: max-content;position: relative;margin-top: 15px;">
+          <div class="form-group" style="float:left;margin-right: 4%; width: 48%;position: absolute;bottom: 0;">
+              <label style="display: block;">Pragmatics</label>
+               <select style="display: block" multiple class="selectpicker" id="pragmatics" data-actions-box="true" name="pragmatics">
+                  {% for prag in pragmatics %}
+                    <option value="{{ prag }}">{{ prag }}</option>
+                  {% endfor %}
+                  <option value="prohibition">prohibition</option>
+                  <option value="refusal">refusal</option>
+                  <option value="surprise">surprise</option>
+              </select>
+          </div>
+          <hr>
+          <div class="form-group" style="float:left;width: 48%;">
+              <label style="display: block;">Additional semantics</label>
+               <select style="display: block;" multiple id="add_sem" class="selectpicker" data-actions-box="true" name="add_sem">
+                  {% for sem in add_sems %}
+                  <option value="{{ sem }}">{{ sem }}</option>
+                  {% endfor %}
+              </select>
+          </div>
+      </div>
+
+      <div class="form-row" style="margin-top: 5px;">
+          <div class="form-group center" style="width: 100%;">
+              <label>Lemma</label>
+              <input class="form-control" name="lemma" list="lemmata" id="lemma">
+              <datalist id="lemmata">
+                  {% for lemma in lemmata %}
+                    <option value="{{ lemma }}">{{ lemma }}</option>
+                  {% endfor %}
+              </datalist>
+          </div>
+          <div class="container row" id="virtual" style="width: fit-content;margin: auto;margin-top: 8px;">
+            <input type="button" class="virtual-button" value="č" onclick="input(this, 'lemma');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="ć" onclick="input(this, 'lemma');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="đ" onclick="input(this, 'lemma');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="š" onclick="input(this, 'lemma');" style="margin-right: 4pt;">
+            <input type="button" class="virtual-button" value="ž" onclick="input(this, 'lemma');">
+          </div>
+      </div>
+
+      <div class="form-row" style="height: max-content;position: relative;margin-top: 15px;">
+          <div class="form-group" style="float:left;margin-right: 4%; width: 48%;">
+              <label style="display: block;">Glosses</label>
+              <select style="display: block;"  id="glosses" class="selectpicker" multiple data-actions-box="true" name="glosses">
+                {% for gloss in glosses %}
+                  <option value="{{gloss}}" style="text-transform: uppercase;">{{gloss}}</option>
+                {% endfor %}
+              </select>
+          </div>
+          <div class="form-group" style="float:left; width: 48%;">
+              <label style="display: block;">Language</label>
+               <select style="display: block;" multiple id="langs" class="selectpicker" data-actions-box="true" name="language">
+                  {% for lang in languages %}
+                  <option value="{{ lang }}">{{ lang }}</option>
+                  {% endfor %}
+              </select>
+          </div>
+      </div>
+
+        <div id="otherbutton" class="form-group center" style="width: max-content;margin-bottom: 10px;">
+            <button type="button" onclick="myFunction()">other options</button>
+        </div>
+
+    <div id="myDIV" style="display: none;">
+      <div class="form-row" style="margin-top: 10px;">
+          <div class="form-group" style="width: 100%;">
+              <label>Syntactic structure</label>
+              <input class="form-control" name="syntax" placeholder="VERB" id="syntax">
+          </div>
+      </div>
+
+      <div class="form-row" style="margin-top: 8px;">
+          <div class="form-group" style="width: 100%;">
+              <label >Inner structure</label>
+              <input class="form-control" name="inner" list="ins" id="is">
+              <datalist  id="ins">
+                  {% for inner in strucs %}
+                  <option value="{{ inner }}">{{ inner }}</option>
+                  {% endfor %}
+              </datalist>
+              </select>
+          </div>
+      </div>
+
+      <div class="form-row" style="margin-top: 8px;">
+          <div class="form-group" style="float:left;margin-right: 4%; width: 48%;">
+            <label style="display: block;">Speech act</label>
+               <select style="display: block;" multiple id="speech_act" class="selectpicker" data-actions-box="true" name="speech_act">
+                  {% for act in speech_acts %}
+                  <option value="{{ act }}">{{ act }}</option>
+                  {% endfor %}
+              </select>
+          </div>
+          <div class="form-group" style="float: left;width: 48%;">
+              <label style="display: block;" >Structure</label>
+              <select style="display: block;" multiple id="structure" class="selectpicker" data-actions-box="true" name="structure">
+                  <option value="2">bipartite</option>
+                  <option value="3">tripartite</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="form-row" style="margin-top: 8px;">
+          <div class="form-group" style="width: 100%;">
+              <label style="display: block;" >Intonation</label>
+              <select style="display: block;" multiple id="intonation" class="selectpicker" data-actions-box="true" name="intonation">
+                  {% for intonation in intonations %}
+                    <option value="{{intonation}}">{{intonation}}</option>
+                  {% endfor %}
+              </select>
+          </div>
+      </div>
+      </div>
+      <div class="form-group center" style="width: max-content;padding-bottom: 15px;">
+        <button type="submit" class="btn btn-primary" style="background-color: #00aabb;border: #00aabb;">search</button>
+      </div>
+    </div>
+</form>
+</div>
+
+<footer class="footer-59391" style="margin-top: 150px;">
+    <div class="container-fluid" style="position: relative;">
+        <div class="row">
+            <div class="central-footer" style="align-content: center;height: 75px; z-index: 1;position: absolute;top: -214%;left: 50%;transform: translate(-50%, 0);">
+                <div class="container-fluid" style="text-align: center;">
+                <div class="form-group left" style="margin:auto;">
+                    <b>Contacts:</b> <br>
+                    anton.buzanov.00@gmail.com
+                </div>
+                <div class="form-group right" style="margin:auto;margin-top: 25px;">
+                    Multilingual Pragmaticon, 2021 <br>
+                    School of Linguistics, HSE, Moscow
+                </div>
+            </div>
+            </div>
+            <div class="left-footer" style="height: 75px; width: 50%;position: absolute;bottom: 0;">
+            </div>
+            <div class="right-footer" style="height: 75px; width: 50%;position: absolute;bottom: 0;right:0;">
+            </div>
+            <p class="m-0">.</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Initialize the plugin: -->
+  <script src="/static/js/main.js" type="text/javascript"></script>
+  <script src="/static/js/modal.js" type="text/javascript"></script>
+
+</body>
+
+</html>
